@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank page</title>
+
+     <!-- tailwind link -->
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1 class="text-center font-samibold text-7xl">welcome to <span class="text-green-500">our bank . </span></h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid  grid-cols-3 gap-4 my-8 w-2/3 m-auto p-8 ">
+                <div class=" bg-yellow-400 rounded">
+                    <h3 class="ml-8 text-red-400 mt-5 text-2xl  font-samibold">Deposit</h3>
+                    <h4 class="ml-8 text-white text-3xl mb-5 font-samibold">$<span id="diposite-secondary-amount">00</span></h4>
+                </div>
+                <div class=" bg-green-400 rounded">
+                    <h3 class="ml-8 text-pink-400 mt-5 text-2xl  font-samibold">Withdraw</h3>
+                    <h4 class="ml-8 text-white text-3xl mb-5 font-samibold">$<span id="withdraw-input-field">00</span></h4>
+                </div>
+                <div class=" bg-pink-400 rounded ">
+                    <h3 class="ml-8 text-white mt-5 text-2xl  font-samibold">Balance</h3>
+                    <h4 class="ml-8 text-white text-3xl mb-5 font-samibold">$<span id="balance-check">1200</span></h4>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <!-- diposite $$ withdraw section -->
+            <div class="grid grid-cols-2  gap-3 my-8 w-2/3 m-auto p-8 ">
+                <div class="bg-pink-200 ">
+                    <h3 class="ml-8 mb-2 mt-5 text-2xl  font-samibold">diposite</h3>
+                    <div>
+                        <input id="diposite-amount" class="block w-2/3 mb-2 ml-8 p-1" type="text" placeholder="$ how much money you want to  diposite">
+                        
+                        <button id="deposit-button" class="bg-yellow-400 m-2 ml-8 rounded-full py-3 px-6 font-bold text-white"  > Please Diposite</button>
+                    </div>
+                </div>
+                <!-- for withdraw  -->
+                <div class="bg-green-200 ">
+                    <h3 class="ml-8 mb-2 mt-5 text-2xl  font-samibold">withdraw</h3>
+                    <div class="pb-8">
+                        <input id="withdraw-amount" class="block w-2/3 mb-2 ml-8 p-1" type="text" placeholder="$ how much money you want to  diposite">
+                        
+                        <button id="withdraw-button" class="bg-yellow-400 m-2 ml-8 rounded-full py-3 px-6 font-bold text-white"  > Please Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/banking.js">
+    </script>
+</body>
+</html>
